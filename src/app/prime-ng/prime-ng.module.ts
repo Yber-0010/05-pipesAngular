@@ -7,6 +7,7 @@ import { MenuModule } from 'primeng/menu';
 import { PanelModule } from 'primeng/panel';
 import { ToastModule } from 'primeng/toast';
 import { ToolbarModule } from 'primeng/toolbar';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   exports:[
@@ -17,7 +18,8 @@ import { ToolbarModule } from 'primeng/toolbar';
     FieldsetModule,
     MenubarModule,
     PanelModule,
-    ToolbarModule
+    ToolbarModule,
+    TableModule
   ]
 })
 
