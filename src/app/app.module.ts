@@ -10,6 +10,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import localEsBO from '@angular/common/locales/es-BO';
 import localFrCA from '@angular/common/locales/fr-CA';
 import { registerLocaleData } from '@angular/common'
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 registerLocaleData( localEsBO );
 registerLocaleData( localFrCA );
@@ -26,7 +27,8 @@ registerLocaleData( localFrCA );
   ],
   providers: [
     /* { provide: LOCALE_ID, useValue: 'es-BO' } */
-    { provide: LOCALE_ID, useValue: 'en-US' }
+    { provide: LOCALE_ID, useValue: 'en-US' },
+    { provide: LocationStrategy, useClass: HashLocationStrategy }
   ],
   bootstrap: [AppComponent]
 })
